@@ -201,6 +201,8 @@ perceivable**:
 The percivable text is calculated using [Text alternative spec](https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te)
 
 **tldr**
+
+```
 A. if current node is hidden
  return ""
 B. if current node has `aria-labeledby` accumulate values and
@@ -217,6 +219,7 @@ F. try generate if role allows [try name from content](https://www.w3.org/TR/wai
     accumulates name from
       - `:before`, `:after` text alternative
       - the result of text alternative for each child node
+```
 
 For an element to be **perceivable**, it MUST be **perceivable to all users**.
 If an element is not perceivable to screen readers, or not perceivable due to
